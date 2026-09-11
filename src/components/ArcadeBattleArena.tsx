@@ -4690,6 +4690,25 @@ export const ArcadeBattleArena: React.FC<ArcadeBattleArenaProps> = ({
                 );
               })}
             </div>
+
+            {/* WINS PLACAR: e.g. 02 - 01 */}
+            <div className="flex items-center gap-1 mt-1">
+              <span className={`font-['Press_Start_2P'] text-[10px] font-black tabular-nums transition-all duration-300 ${
+                roundHistory.filter((r) => r === 'team1').length > roundHistory.filter((r) => r === 'team2').length
+                  ? 'text-amber-400 drop-shadow-[0_0_6px_rgba(245,158,11,0.8)]'
+                  : 'text-zinc-400'
+              }`}>
+                {String(roundHistory.filter((r) => r === 'team1').length).padStart(2, '0')}
+              </span>
+              <span className="font-['Press_Start_2P'] text-[8px] text-zinc-500">-</span>
+              <span className={`font-['Press_Start_2P'] text-[10px] font-black tabular-nums transition-all duration-300 ${
+                roundHistory.filter((r) => r === 'team2').length > roundHistory.filter((r) => r === 'team1').length
+                  ? 'text-purple-400 drop-shadow-[0_0_6px_rgba(168,85,247,0.8)]'
+                  : 'text-zinc-400'
+              }`}>
+                {String(roundHistory.filter((r) => r === 'team2').length).padStart(2, '0')}
+              </span>
+            </div>
           </div>
 
           {/* TEAM 2 HUD (RIGHT) */}
