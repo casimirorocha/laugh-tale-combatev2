@@ -157,7 +157,7 @@ export const AICommentaryBox: React.FC<AICommentaryBoxProps> = React.memo(({
     'Luffy unleashes Match Start'
   );
   const [highlightTag, setHighlightTag] = useState<string>('MATCH_START');
-  const [announcerLang, setAnnouncerLang] = useState<AnnouncerLanguage>('ja'); // Japanese by default
+  const [announcerLang, setAnnouncerLang] = useState<AnnouncerLanguage>('pt'); // Portugues Brazil by default
   const [isLoadingAI, setIsLoadingAI] = useState<boolean>(false);
   const lastProcessedLogId = useRef<string>('');
   const lastNetworkCallTime = useRef<number>(0);
