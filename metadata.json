@@ -1,0 +1,8 @@
+{
+  "name": "Remix One Piece",
+  "description": "Classic The King of Fighters style 3v3 and 1v1 arcade combat simulation featuring One Piece legends",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

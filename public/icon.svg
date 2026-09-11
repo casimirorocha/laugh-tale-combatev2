@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#27272a"/>
+      <stop offset="100%" stop-color="#09090b"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+  </defs>
+  <circle cx="50" cy="50" r="48" fill="url(#bg)" stroke="url(#gold)" stroke-width="3"/>
+  <!-- Crossed Bones -->
+  <path d="M22 26 L78 74 M78 26 L22 74" stroke="#e4e4e7" stroke-width="6" stroke-linecap="round"/>
+  <!-- Straw Hat brim & top -->
+  <ellipse cx="50" cy="42" rx="30" ry="8" fill="#eab308" stroke="#ca8a04" stroke-width="1.5"/>
+  <path d="M34 42 Q50 20 66 42" fill="#eab308" stroke="#ca8a04" stroke-width="1.5"/>
+  <path d="M35 41 Q50 36 65 41" stroke="#dc2626" stroke-width="3" fill="none"/>
+  <!-- Skull Face -->
+  <circle cx="50" cy="54" r="16" fill="#f4f4f5"/>
+  <!-- Eye sockets -->
+  <circle cx="44" cy="53" r="3.5" fill="#09090b"/>
+  <circle cx="56" cy="53" r="3.5" fill="#09090b"/>
+  <!-- Nose -->
+  <polygon points="50,56 48,60 52,60" fill="#09090b"/>
+  <!-- Teeth / Grin -->
+  <path d="M43 64 Q50 67 57 64" stroke="#09090b" stroke-width="2" fill="none"/>
+  <line x1="47" y1="63" x2="47" y2="66" stroke="#09090b" stroke-width="1.5"/>
+  <line x1="50" y1="63" x2="50" y2="67" stroke="#09090b" stroke-width="1.5"/>
+  <line x1="53" y1="63" x2="53" y2="66" stroke="#09090b" stroke-width="1.5"/>
+</svg>
